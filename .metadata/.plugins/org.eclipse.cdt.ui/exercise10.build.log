@@ -1,0 +1,192 @@
+14:53:25 **** Incremental Build of configuration Debug for project exercise10 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:169:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  169 |             HAL_GPIO_WritePin(GPIOB, ROW0_Pin, (matrix_buffer[0] & 0x01<< column + 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:170:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  170 |             HAL_GPIO_WritePin(GPIOB, ROW1_Pin, (matrix_buffer[1] & 0x01<< column + 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:171:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  171 |             HAL_GPIO_WritePin(GPIOB, ROW2_Pin, (matrix_buffer[2] & 0x01<< column + 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:172:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  172 |             HAL_GPIO_WritePin(GPIOB, ROW3_Pin, (matrix_buffer[3] & 0x01<< column + 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:173:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  173 |             HAL_GPIO_WritePin(GPIOB, ROW4_Pin, (matrix_buffer[4] & 0x01<< column + 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:174:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  174 |             HAL_GPIO_WritePin(GPIOB, ROW5_Pin, (matrix_buffer[5] & 0x01<< column + 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:175:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  175 |             HAL_GPIO_WritePin(GPIOB, ROW6_Pin, (matrix_buffer[6] & 0x01<< column + 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:176:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  176 |             HAL_GPIO_WritePin(GPIOB, ROW7_Pin, (matrix_buffer[7] & 0x01<< column + 1) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:180:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  180 |             HAL_GPIO_WritePin(GPIOB, ROW0_Pin, (matrix_buffer[0] & 0x01<< column + 2) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:181:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  181 |             HAL_GPIO_WritePin(GPIOB, ROW1_Pin, (matrix_buffer[1] & 0x01<< column + 2) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:182:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  182 |             HAL_GPIO_WritePin(GPIOB, ROW2_Pin, (matrix_buffer[2] & 0x01<< column + 2) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:183:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  183 |             HAL_GPIO_WritePin(GPIOB, ROW3_Pin, (matrix_buffer[3] & 0x01<< column + 2) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:184:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  184 |             HAL_GPIO_WritePin(GPIOB, ROW4_Pin, (matrix_buffer[4] & 0x01<< column + 2) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:185:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  185 |             HAL_GPIO_WritePin(GPIOB, ROW5_Pin, (matrix_buffer[5] & 0x01<< column + 2) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:186:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  186 |             HAL_GPIO_WritePin(GPIOB, ROW6_Pin, (matrix_buffer[6] & 0x01<< column + 2) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:187:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  187 |             HAL_GPIO_WritePin(GPIOB, ROW7_Pin, (matrix_buffer[7] & 0x01<< column + 2) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:191:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  191 |             HAL_GPIO_WritePin(GPIOB, ROW0_Pin, (matrix_buffer[0] & 0x01<< column + 3) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:192:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  192 |             HAL_GPIO_WritePin(GPIOB, ROW1_Pin, (matrix_buffer[1] & 0x01<< column + 3) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:193:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  193 |             HAL_GPIO_WritePin(GPIOB, ROW2_Pin, (matrix_buffer[2] & 0x01<< column + 3) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:194:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  194 |             HAL_GPIO_WritePin(GPIOB, ROW3_Pin, (matrix_buffer[3] & 0x01<< column + 3) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:195:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  195 |             HAL_GPIO_WritePin(GPIOB, ROW4_Pin, (matrix_buffer[4] & 0x01<< column + 3) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:196:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  196 |             HAL_GPIO_WritePin(GPIOB, ROW5_Pin, (matrix_buffer[5] & 0x01<< column + 3) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:197:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  197 |             HAL_GPIO_WritePin(GPIOB, ROW6_Pin, (matrix_buffer[6] & 0x01<< column + 3) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:198:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  198 |             HAL_GPIO_WritePin(GPIOB, ROW7_Pin, (matrix_buffer[7] & 0x01<< column + 3) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:202:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  202 |             HAL_GPIO_WritePin(GPIOB, ROW0_Pin, (matrix_buffer[0] & 0x01<< column + 4) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:203:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  203 |             HAL_GPIO_WritePin(GPIOB, ROW1_Pin, (matrix_buffer[1] & 0x01<< column + 4) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:204:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  204 |             HAL_GPIO_WritePin(GPIOB, ROW2_Pin, (matrix_buffer[2] & 0x01<< column + 4) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:205:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  205 |             HAL_GPIO_WritePin(GPIOB, ROW3_Pin, (matrix_buffer[3] & 0x01<< column + 4) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:206:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  206 |             HAL_GPIO_WritePin(GPIOB, ROW4_Pin, (matrix_buffer[4] & 0x01<< column + 4) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:207:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  207 |             HAL_GPIO_WritePin(GPIOB, ROW5_Pin, (matrix_buffer[5] & 0x01<< column + 4) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:208:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  208 |             HAL_GPIO_WritePin(GPIOB, ROW6_Pin, (matrix_buffer[6] & 0x01<< column + 4) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:209:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  209 |             HAL_GPIO_WritePin(GPIOB, ROW7_Pin, (matrix_buffer[7] & 0x01<< column + 4) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:213:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  213 |             HAL_GPIO_WritePin(GPIOB, ROW0_Pin, (matrix_buffer[0] & 0x01<< column + 5) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:214:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  214 |             HAL_GPIO_WritePin(GPIOB, ROW1_Pin, (matrix_buffer[1] & 0x01<< column + 5) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:215:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  215 |             HAL_GPIO_WritePin(GPIOB, ROW2_Pin, (matrix_buffer[2] & 0x01<< column + 5) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:216:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  216 |             HAL_GPIO_WritePin(GPIOB, ROW3_Pin, (matrix_buffer[3] & 0x01<< column + 5) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:217:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  217 |             HAL_GPIO_WritePin(GPIOB, ROW4_Pin, (matrix_buffer[4] & 0x01<< column + 5) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:218:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  218 |             HAL_GPIO_WritePin(GPIOB, ROW5_Pin, (matrix_buffer[5] & 0x01<< column + 5) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:219:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  219 |             HAL_GPIO_WritePin(GPIOB, ROW6_Pin, (matrix_buffer[6] & 0x01<< column + 5) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:220:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  220 |             HAL_GPIO_WritePin(GPIOB, ROW7_Pin, (matrix_buffer[7] & 0x01<< column + 5) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:224:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  224 |             HAL_GPIO_WritePin(GPIOB, ROW0_Pin, (matrix_buffer[0] & 0x01<< column + 6) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:225:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  225 |             HAL_GPIO_WritePin(GPIOB, ROW1_Pin, (matrix_buffer[1] & 0x01<< column + 6) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:226:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  226 |             HAL_GPIO_WritePin(GPIOB, ROW2_Pin, (matrix_buffer[2] & 0x01<< column + 6) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:227:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  227 |             HAL_GPIO_WritePin(GPIOB, ROW3_Pin, (matrix_buffer[3] & 0x01<< column + 6) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:228:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  228 |             HAL_GPIO_WritePin(GPIOB, ROW4_Pin, (matrix_buffer[4] & 0x01<< column + 6) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:229:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  229 |             HAL_GPIO_WritePin(GPIOB, ROW5_Pin, (matrix_buffer[5] & 0x01<< column + 6) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:230:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  230 |             HAL_GPIO_WritePin(GPIOB, ROW6_Pin, (matrix_buffer[6] & 0x01<< column + 6) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:231:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  231 |             HAL_GPIO_WritePin(GPIOB, ROW7_Pin, (matrix_buffer[7] & 0x01<< column + 6) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:235:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  235 |             HAL_GPIO_WritePin(GPIOB, ROW0_Pin, (matrix_buffer[0] & 0x01<< column + 7) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:236:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  236 |             HAL_GPIO_WritePin(GPIOB, ROW1_Pin, (matrix_buffer[1] & 0x01<< column + 7) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:237:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  237 |             HAL_GPIO_WritePin(GPIOB, ROW2_Pin, (matrix_buffer[2] & 0x01<< column + 7) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:238:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  238 |             HAL_GPIO_WritePin(GPIOB, ROW3_Pin, (matrix_buffer[3] & 0x01<< column + 7) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:239:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  239 |             HAL_GPIO_WritePin(GPIOB, ROW4_Pin, (matrix_buffer[4] & 0x01<< column + 7) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:240:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  240 |             HAL_GPIO_WritePin(GPIOB, ROW5_Pin, (matrix_buffer[5] & 0x01<< column + 7) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:241:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  241 |             HAL_GPIO_WritePin(GPIOB, ROW6_Pin, (matrix_buffer[6] & 0x01<< column + 7) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+../Core/Src/main.c:242:82: warning: suggest parentheses around '+' inside '<<' [-Wparentheses]
+  242 |             HAL_GPIO_WritePin(GPIOB, ROW7_Pin, (matrix_buffer[7] & 0x01<< column + 7) ? GPIO_PIN_RESET : GPIO_PIN_SET);
+      |                                                                           ~~~~~~~^~~
+arm-none-eabi-gcc -o "exercise10.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Users\haib1\OneDrive\documents\university\year3\2nd_semester\Real_Time_System_DrLeTrongNhan\lab\lab3\exercise10\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="exercise10.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: exercise10.elf
+ 
+arm-none-eabi-size   exercise10.elf 
+arm-none-eabi-objdump -h -S  exercise10.elf  > "exercise10.list"
+arm-none-eabi-objcopy  -O ihex  exercise10.elf  "exercise10.hex"
+   text	   data	    bss	    dec	    hex	filename
+  10844	     44	   2460	  13348	   3424	exercise10.elf
+arm-none-eabi-objcopy  -O binary  exercise10.elf  "exercise10.bin"
+Finished building: default.size.stdout
+ 
+Finished building: exercise10.hex
+Finished building: exercise10.bin
+ 
+ 
+Finished building: exercise10.list
+ 
+
+14:53:30 Build Finished. 0 errors, 56 warnings. (took 5s.1ms)
+
